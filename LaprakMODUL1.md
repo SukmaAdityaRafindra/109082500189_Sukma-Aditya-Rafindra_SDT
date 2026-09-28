@@ -1,6 +1,6 @@
 # <h1 align="center">Laporan Praktikum Modul 1 - Codeblocks IDE & Pengenalan Bahas C++ (Bagian Pertama)</h1>
 
-<p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
+<p align="center">  Sukma Aditya Rafindra - 109082500189</p>
 
 ## Dasar Teori
 
