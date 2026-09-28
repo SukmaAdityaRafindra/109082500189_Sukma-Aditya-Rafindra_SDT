@@ -1,1 +1,4 @@
-# 109082500189_Sukma-Aditya-Rafindra_SDT
+# Laproran Praktikum Struktur Data
+Nama : Sukma Aditya Rafindra
+Kelas: S1IF - 13 -04
+NIM : 109082500189
