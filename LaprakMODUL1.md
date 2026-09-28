@@ -411,7 +411,7 @@ int main() {
 
 ##### Output 2
 
-![Screenshot Output Unguided 3_2]()
+![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL3.2.png)
 
 penjelasan unguided 3
 Program tersebut digunakan untuk membuat pola angka berbentuk segitiga terbalik dengan tanda `*` di tengah. Perulangan pertama mengatur jumlah baris, sedangkan perulangan berikutnya digunakan untuk membuat spasi, angka dari besar ke kecil, tanda `*`, lalu angka dari kecil ke besar. Setelah semua baris selesai, program menampilkan satu tanda `*` di bagian paling bawah.
