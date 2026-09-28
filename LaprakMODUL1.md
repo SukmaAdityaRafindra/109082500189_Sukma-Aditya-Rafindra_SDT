@@ -314,14 +314,12 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL1.1.png)
 
-contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
 
 ##### Output 2
 
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL1.2.png)
 
 penjelasan unguided 1
 Program tersebut digunakan untuk melakukan operasi aritmatika pada dua angka yang dimasukkan oleh pengguna. Variabel `a` dan `b` menyimpan kedua angka tersebut, kemudian program menghitung penjumlahan, pengurangan, perkalian, dan pembagian menggunakan operator aritmatika. Hasil dari setiap operasi kemudian ditampilkan menggunakan `cout`.
@@ -361,14 +359,12 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL2.1.png)
 
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
 
 ##### Output 2
 
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL2.2.png)
 
 penjelasan unguided 2
 Program tersebut digunakan untuk mengubah angka menjadi bentuk tulisan dari 0 sampai 100. Pengguna memasukkan sebuah angka, kemudian `if-else` menentukan bentuk tulisan sesuai nilai angka tersebut. Array `angka` digunakan untuk menyimpan nama angka 0 sampai 9, sedangkan angka puluhan dibentuk menggunakan kata “puluh” dan angka satuannya.
@@ -411,14 +407,11 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL3.1.png)
 
 ##### Output 2
 
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_2]()
 
 penjelasan unguided 3
 Program tersebut digunakan untuk membuat pola angka berbentuk segitiga terbalik dengan tanda `*` di tengah. Perulangan pertama mengatur jumlah baris, sedangkan perulangan berikutnya digunakan untuk membuat spasi, angka dari besar ke kecil, tanda `*`, lalu angka dari kecil ke besar. Setelah semua baris selesai, program menampilkan satu tanda `*` di bagian paling bawah.
