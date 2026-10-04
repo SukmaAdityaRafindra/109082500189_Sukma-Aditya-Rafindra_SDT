@@ -292,14 +292,15 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL1.1.png)
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal1.1MODUL2.png)
 
 
 ##### Output 2
 
-![Screenshot Output Unguided 1_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL1.2.png)
+![Screenshot Output Unguided 1_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal1.2MODUL2.png)
 
 penjelasan unguided 1
+Program ini digunakan untuk melakukan operasi pada dua matriks berukuran 3×3, yaitu penjumlahan, pengurangan, dan perkalian. Fungsi `inputMatriks()` digunakan untuk memasukkan nilai elemen matriks A dan B. Fungsi `cetakMatriks()` digunakan untuk menampilkan hasil matriks ke layar. Fungsi `tambahMatriks()` menjumlahkan elemen matriks A dan B, sedangkan `kurangMatriks()` melakukan pengurangan. Fungsi `kaliMatriks()` melakukan perkalian matriks dengan menggunakan perulangan `i`, `j`, dan `k`. Pada `main()`, program menerima input kedua matriks lalu menampilkan hasil dari ketiga operasi tersebut.
 
 
 ### 2. (isi dengan soal unguided 2)
@@ -340,14 +341,15 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 2_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL2.1.png)
+![Screenshot Output Unguided 2_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal2.1MODUL2.png)
 
 
 ##### Output 2
 
-![Screenshot Output Unguided 2_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL2.2.png)
+![Screenshot Output Unguided 2_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal2.2MODUL2.png)
 
 penjelasan unguided 2
+Program ini digunakan untuk menukar nilai tiga variabel dengan menggunakan pointer dan reference. Fungsi `tukarPointer()` menukar nilai `a`, `b`, dan `c` melalui alamat memori menggunakan pointer. Sedangkan `tukarReference()` menukar nilainya secara langsung menggunakan reference. Pada `main()`, user memasukkan tiga angka, kemudian program menampilkan nilai awal, hasil setelah ditukar menggunakan pointer, dan hasil setelah ditukar menggunakan reference.
 
 
 ### 3. (isi dengan soal unguided 3)
@@ -398,17 +400,20 @@ void tampilkanArray(int arr[], int n) {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL3.1.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal3.1MODUL2.png)
 
 ##### Output 2
 
-![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/Output/outputSOAL3.2.png)
+![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal3.2MODUL2.png)
 
 penjelasan unguided 3
+Program ini digunakan untuk mencari nilai maksimum, minimum, dan rata-rata dari sebuah array. Fungsi `cariMaksimum()` mencari nilai terbesar, sedangkan `cariMinimum()` mencari nilai terkecil. Fungsi `hitungRataRata()` menghitung rata-rata semua nilai dalam array menggunakan reference. Sementara itu, `tampilkanArray()` digunakan untuk menampilkan semua isi array ke layar.
 
 
 ## Kesimpulan
-  
+
+Dari praktikum Modul 2 ini, saya jadi lebih memahami dasar pemrograman C++ seperti array, fungsi, pointer, reference, serta operasi pada matriks. Saya juga belajar bagaimana membuat program yang lebih terstruktur dengan menggunakan beberapa fungsi. Melalui latihan guided dan unguided, saya bisa lebih memahami cara kerja kode dan menerapkannya dalam program sederhana.
+
 
 
 
