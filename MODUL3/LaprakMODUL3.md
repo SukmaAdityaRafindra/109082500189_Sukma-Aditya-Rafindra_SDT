@@ -173,12 +173,12 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal1.1MODUL2.png)
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL3/Output/soal1.1MODUL3SDT.png)
 
 
 ##### Output 2
 
-![Screenshot Output Unguided 1_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal1.2MODUL2.png)
+![Screenshot Output Unguided 1_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL3/Output/soal1.2MODUL3SDT.png)
 
 penjelasan unguided 1
 Kode ini digunakan untuk memasukkan data mahasiswa, seperti nama, NIM, nilai UTS, UAS, dan tugas. Fungsi `hitungNA` menghitung nilai akhir dengan bobot UTS 30%, UAS 40%, dan tugas 30%. Data disimpan dalam array `mhs` dengan maksimal 10 mahasiswa, lalu program menampilkan nama, NIM, dan nilai akhir setiap mahasiswa.
@@ -222,7 +222,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 2_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal2.1MODUL2.png)
+![Screenshot Output Unguided 2_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL3/Output/soal2MODUL3SDT.png)
 
 penjelasan unguided 2
 Program ini menerapkan tipe data kustom (ADT) untuk menyimpan data mata pelajaran. Pertama, `struct pelajaran` dibuat untuk menampung data nama dan kode mata pelajaran. Fungsi `create_pelajaran` bertugas membuat serta mengisi variabel struct baru, sedangkan prosedur `tampil_pelajaran` dipakai untuk mencetak data tersebut ke layar. Pada fungsi `main`, program menginisialisasi variabel nama dan kode, memanggil fungsi pembuat data, lalu menampilkan hasilnya.
@@ -284,11 +284,11 @@ return 0;
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal3.1MODUL2.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL3/Output/soal3.1MODUL3SDT.png)
 
 ##### Output 2
 
-![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal3.2MODUL2.png)
+![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL3/Output/soal3.2MODUL3SDT.png)
 
 penjelasan unguided 3
 Program ini menukarkan elemen tertentu antara dua matriks (array 2D 3x3) menggunakan pointer. Prosedur `tampilArray` dipakai untuk mencetak elemen array 2D ke layar, sedangkan fungsi `tukar` memanfaatkan pointer untuk saling menukar nilai data yang ditunjuk. Pada fungsi `main`, program menginisialisasi matriks `A` dan `B`, lalu pointer `ptrA` dan `ptrB` diarahkan ke posisi baris dan kolom yang sama (indeks `1,1`) untuk ditukarkan nilainya sebelum akhirnya menampilkan matriks terbaru.
