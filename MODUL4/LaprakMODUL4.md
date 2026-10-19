@@ -408,7 +408,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL2/Output/soal3.1MODUL2.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL4/Output/image.png)
 
 penjelasan unguided 3
 fungsi main() ini adalah program utama untuk menjalankan Singly Linked List di mana program mendeklarasikan list L beserta lima pointer (P1 hingga P5), menginisialisasi list agar kosong, lalu memasukkan nilai-nilai integer (2, 0, 8, 12, dan 9) satu per satu ke awal list menggunakan metode insertFirst, sehingga saat dicetak lewat printInfo, urutan akhirnya akan terbalik menjadi 9 12 8 0 2.
