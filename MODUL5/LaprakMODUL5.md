@@ -712,7 +712,7 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL4/Output/image.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL5/Output/image.png)
 
 penjelasan unguided 3
 Kode tersebut digunakan untuk menjalankan program Singly Linked List. Pertama, program membuat list kosong, lalu membuat lima node dengan nilai 2, 0, 8, 12, dan 9. Setiap node dimasukkan ke bagian awal list menggunakan `insertFirst`, sehingga urutan datanya menjadi 9, 12, 8, 0, 2. Selanjutnya, `printInfo` menampilkan semua data, `findElm` mencari nilai 8 dalam list, dan `totalInfo` menghitung jumlah seluruh nilai, yaitu 31.
