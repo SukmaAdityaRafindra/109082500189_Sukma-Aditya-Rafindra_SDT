@@ -1,8 +1,12 @@
-#include "List.h"
+#include "list.h"
 #include <iostream>
 using namespace std;
 
-bool isEmpty(linkedList List)
+// I.S = Initial State / kondisi awal
+// F.S = Final State / kondisi akhir
+
+// fungsi untuk cek apakah list kosong atau tidak
+bool isEmpty(linkedlist List)
 {
     if (List.first == Nil)
     {
@@ -14,44 +18,53 @@ bool isEmpty(linkedList List)
     }
 }
 
-void createList(linkedList &List)
+// pembuatan linked list kosong
+void createList(linkedlist &List)
 {
+    /* I.S. sembarang
+       F.S. terbentuk list kosong */
     List.first = Nil;
 }
 
+// pembuatan node baru dengan menerapkan manajemen memori
 address alokasi(string nama, string nim, int umur)
 {
+    /* I.S. sembarang
+       F.S. mengembalikan alamat node baru dengan isidata = sesuai parameter dan next = Nil */
     address nodeBaru = new node;
-        nodeBaru->isidata.nama = nama;
-        nodeBaru->isidata.nim = nim;
-        nodeBaru->isidata.umur = umur;
-        nodeBaru->next = Nil;
-        return nodeBaru;
+    nodeBaru->isidata.nama = nama;
+    nodeBaru->isidata.nim = nim;
+    nodeBaru->isidata.umur = umur;
+    nodeBaru->next = Nil;
+    return nodeBaru;
 }
+
+// penghapusan node dengan menerapkan manajemen memori
 void dealokasi(address &node)
 {
+    /* I.S. P terdefinisi
+       F.S. memori yang digunakan node dikembalikan ke sistem */
+    node->next = Nil;
     delete node;
-    node = Nil;
 }
 
-void dealokasi(address &node)
+// prosedur-prosedur untuk insert / menambahkan node baru kedalam list
+void insertFirst(linkedlist &List, address nodeBaru)
 {
-    node ->next = Nil;
-delete node;
-}
-
-void insertFirst(linkedList &List, address nodeBaru)
-{
+    /* I.S. sembarang, P sudah dialokasikan
+       F.S. menempatkan elemen list (node) pada awal list */
     nodeBaru->next = List.first;
     List.first = nodeBaru;
 }
 
-void insertAfter(linkedlist &List, address nodeBaru, address prev)
+void insertAfter(linkedlist &List, address nodeBaru, address Prev)
 {
-    if (prev != Nil)
+    /* I.S. sembarang, nodeBaru dan Prev alamat salah satu elemen list (node)
+       F.S. menempatkan elemen (node) sesudah elemen node Prev */
+    if (Prev != Nil)
     {
-        nodeBaru->next = prev->next;
-        prev->next = nodeBaru;
+        nodeBaru->next = Prev->next;
+        Prev->next = nodeBaru;
     }
     else
     {
@@ -59,8 +72,10 @@ void insertAfter(linkedlist &List, address nodeBaru, address prev)
     }
 }
 
-void insertLast(linkedList &List, address nodeBaru)
+void insertLast(linkedlist &List, address nodeBaru)
 {
+    /* I.S. sembarang, nodeBaru sudah dialokasikan
+       F.S. menempatkan elemen nodeBaru pada akhir list */
     if (isEmpty(List))
     {
         List.first = nodeBaru;
@@ -74,33 +89,38 @@ void insertLast(linkedList &List, address nodeBaru)
         }
         nodeBantu->next = nodeBaru;
     }
-} 
-
-void delFirst(linkedlist &list)
-{
-        address nodeHapus;
-        if (!isEmpty(list)==false)
-        {
-            nodeHapus = list.first;
-            list.first = list.first->next;
-            nodeHapus->next = Nil;
-            dealokasi(nodeHapus);
-        }
-        else
-        {
-            cout << "List kosong" << endl;
-        }
 }
 
-void delLast(linkedlist &list)
+// prosedur-prosedur untuk delete / menghapus node yang ada didalam list
+void delFirst(linkedlist &List)
 {
-    address nodeHapus, nodePrev;
-    if (!isEmpty(list)==false)
+    /* I.S. list tidak kosong
+    F.S. node pertama di list terhapus*/
+    address nodeHapus;
+    if (isEmpty(List) == false)
     {
-        nodeHapus = list.first;
+        nodeHapus = List.first;
+        List.first = List.first->next;
+        nodeHapus->next = Nil;
+        dealokasi(nodeHapus);
+    }
+    else
+    {
+        cout << "List kosong!" << endl;
+    }
+}
+
+void delLast(linkedlist &List)
+{
+    /* I.S. list tidak kosong
+    F.S. node terakhir di list terhapus */
+    address nodeHapus, nodePrev;
+    if (isEmpty(List) == false)
+    {
+        nodeHapus = List.first;
         if (nodeHapus->next == Nil)
         {
-            list.first->next = Nil;
+            List.first->next = Nil;
             dealokasi(nodeHapus);
         }
         else
@@ -116,51 +136,59 @@ void delLast(linkedlist &list)
     }
     else
     {
-        cout << "List kosong" << endl;
+        cout << "list kosong" << endl;
     }
 }
 
-void deleteAfter(linkedlist &list, address nodeHapus, address nodePrev)
+void delAfter(linkedlist &List, address nodeHapus, address nodePrev)
 {
-   if (isEmpty(list) == true)
-   {
-    cout << "List kosong" << endl;
-   }
-   else
-   {
-    if (nodePrev != Nil && nodePrev->next != Nil)
+    /* I.S. list tidak kosng, Prev alamat salah satu elemen list
+    F.S. nodeBantu adalah alamat dari Prev→next, menghapus Prev→next dari list */
+    if (isEmpty(List) == true)
     {
-        nodeHapus = nodePrev->next;
-        nodePrev->next = nodeHapus->next;
-        nodeHapus->next = Nil;
-        dealokasi(nodeHapus);
+        cout << "List kosong!" << endl;
     }
     else
-    {
-        cout << "Node sebelumnya (prev ) tidak valid!" << endl;
+    { // jika list tidak kosong
+        if (nodePrev != Nil && nodePrev->next != Nil)
+        {
+            nodeHapus = nodePrev->next;
+            nodePrev->next = nodeHapus->next;
+            nodeHapus->next = Nil;
+            dealokasi(nodeHapus);
+        }
+        else
+        {
+            cout << "Node sebelumnya (prev) tidak valid!" << endl;
+        }
     }
-   }
 }
 
-void printList(linkedList List)
+// prosedur untuk menampilkan isi list
+void printList(linkedlist List)
 {
+    /* I.S. list mungkin kosong
+       F.S. jika list tidak kosong menampilkan semua info yang ada pada list */
     if (isEmpty(List))
     {
-        cout << "List kosong" << endl;
+        cout << "List kosong." << endl;
     }
     else
     {
         address nodeBantu = List.first;
         while (nodeBantu != Nil)
         {
-            cout << "Nama: " << nodeBantu->isidata.nama << ", NIM: " << nodeBantu->isidata.nim << ", Usia: " << nodeBantu->isidata.umur << endl;
+            cout << "Nama : " << nodeBantu->isidata.nama << ", NIM : " << nodeBantu->isidata.nim << ", Usia : " << nodeBantu->isidata.umur << endl;
             nodeBantu = nodeBantu->next;
         }
     }
 }
 
-int nbList(linkedList List)
+// function untuk menampilkan jumlah node didalam list
+int nbList(linkedlist List)
 {
+    /* I.S. list sudah ada
+       F.S. menampilkan jumlah node didalam list*/
     int count = 0;
     address nodeBantu = List.first;
     while (nodeBantu != Nil)
@@ -169,4 +197,191 @@ int nbList(linkedList List)
         nodeBantu = nodeBantu->next;
     }
     return count;
+}
+
+// prosedur untuk menghapus list (menghapus semua node didalam list)
+void deleteList(linkedlist &List)
+{
+    /* I.S. list sudah ada
+       F.S. menghapus semua node didalam list*/
+    address nodeBantu, nodeHapus;
+    nodeBantu = List.first;
+    while (nodeBantu != Nil)
+    {
+        nodeHapus = nodeBantu;
+        nodeBantu = nodeBantu->next;
+        dealokasi(nodeHapus);
+    }
+    List.first = Nil;
+    cout << "List sudah terhapus!" << endl;
+}
+
+// prosedur-prosedur untuk melakukan update data node
+void updateFirst(linkedlist &list)
+{
+    dataMahasiswa newData;
+    cout << "Masukan nama baru : ";
+    cin >> newData.nama;
+    cout << "Masukan nim baru : ";
+    cin >> newData.nim;
+    cout << "Masukan umur baru : ";
+    cin >> newData.umur;
+    list.first->isidata = newData;
+}
+
+// void updateLast(linkedlist &list)
+// {
+//     dataMahasiswa newData;
+//     cout << "Masukan nama baru : ";
+//     cin >> newData.nama;
+//     cout << "Masukan nim baru : ";
+//     cin >> newData.nim;
+//     cout << "Masukan umur baru : ";
+//     cin >> newData.umur;
+
+//     address _____ = list.first;
+//     while (_____->next != Nil)
+//     {
+//         _____ = _____->next;
+//     }
+
+//     _____->isidata = newData;
+// }
+
+// void updateAfter(address &prev)
+// {
+//     dataMahasiswa newData;
+//     cout << "Masukan nama baru : ";
+//     cin >> newData.nama;
+//     cout << "Masukan nim baru : ";
+//     cin >> newData.nim;
+//     cout << "Masukan umur baru : ";
+//     cin >> newData.umur;
+
+//     prev->next->isidata = newData;
+// }
+
+// void updateByNim(linkedlist &list, string nim)
+// {
+//     if (!isEmpty(list))
+//     {
+//         address _____ = findNodeByData(list, nim);
+
+//         if (_____ != Nil)
+//         {
+//             dataMahasiswa newData;
+//             cout << "Masukan nama baru : ";
+//             cin >> newData.nama;
+//             cout << "Masukan nim baru : ";
+//             cin >> newData.nim;
+//             cout << "Masukan umur baru : ";
+//             cin >> newData.umur;
+
+//             _____->isidata = newData;
+//         }
+//     }
+//     else
+//     {
+//         cout << "List kosong!" << endl;
+//     }
+// }
+// prosedur-prosedur untuk searching data didalam list
+void FindNodeByData(linkedlist List, string data)
+{
+    /* I.S. list mungkin kosong
+       F.S. menampilkan node yang sesuai dengan nama atau nim yang dicari */
+    if (isEmpty(List) == true)
+    {
+        cout << "List kosong!" << endl;
+    }
+    else
+    {
+        address nodeBantu = List.first;
+        int posisi = 0;
+        bool found = false;
+        while (nodeBantu != Nil)
+        {
+            posisi++;
+            if (nodeBantu->isidata.nama == data || nodeBantu->isidata.nim == data)
+            {
+                cout << "Data " << data << " ditemukan pada posisi ke-" << posisi << "!" << endl;
+                cout << "Nama : " << nodeBantu->isidata.nama << ", NIM : " << nodeBantu->isidata.nim << ", Usia : " << nodeBantu->data.umur << endl;
+                found = true;
+                break;
+            }
+            nodeBantu = nodeBantu->next;
+        }
+        if (found == false)
+        {
+            cout << "Node dengan data " << data << " tidak ditemukan!" << endl;
+        }
+    }
+    cout << endl;
+}
+
+void FindNodeByAddress(linkedlist List, address node)
+{
+    /* I.S. list mungkin kosong
+       F.S. menampilkan node yang sesuai dengan alamat yang dicari */
+    if (isEmpty(List) == true)
+    {
+        cout << "List kosong!" << endl;
+    }
+    else
+    {
+        address nodeBantu = List.first;
+        int posisi = 0;
+        bool found = false;
+        while (nodeBantu != Nil)
+        {
+            posisi++;
+            if (nodeBantu == node)
+            {
+                cout << "Node ditemukan pada posisi ke-" << posisi << "!" << endl;
+                cout << "Alamat Node : " << nodeBantu << endl;
+                cout << "Nama : " << nodeBantu->isidata.nama << ", NIM : " << nodeBantu->isidata.nim << ", Usia : " << nodeBantu->isidata.umur << endl;
+                found = true;
+                break;
+            }
+            nodeBantu = nodeBantu->next;
+        }
+        if (found == false)
+        {
+            cout << "Node dengan alamat " << node << " tidak ditemukan dalam list!" << endl;
+        }
+    }
+    cout << endl;
+}
+
+void FindNodeByRange(linkedlist List, int nilaiAwal, int nilaiAkhir)
+{
+    /* I.S. list mungkin kosong
+       F.S. menampilkan semua node yang memiliki umur di dalam rentang nilaiAwal sampai nilaiAkhir */
+    if (isEmpty(List) == true)
+    {
+        cout << "List kosong!" << endl;
+    }
+    else
+    {
+        address nodeBantu = List.first;
+        int posisi = 0;
+        bool found = false;
+        cout << "--- Data diatas usia " << nilaiAwal << " dan dibawah " << nilaiAkhir << " ---" << endl;
+        while (nodeBantu != Nil)
+        {
+            posisi++;
+            int umur = nodeBantu->isidata.umur;
+            if (umur > nilaiAwal && umur < nilaiAkhir)
+            {
+                cout << "Data ditemukan pada posisi ke-" << posisi << " :" << endl;
+                cout << "Nama : " << nodeBantu->isidata.nama << ", NIM : " << nodeBantu->isidata.nim << ", Usia : " << umur << endl;
+                found = true;
+            }
+            nodeBantu = nodeBantu->next;
+        }
+        if (found == false)
+        {
+            cout << "Tidak ada data node dalam range tersebut!" << endl;
+        }
+    }
 }
