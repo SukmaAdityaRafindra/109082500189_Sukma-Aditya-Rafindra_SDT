@@ -886,7 +886,11 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL5/Output/image.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL6/Output/1.png)
+
+![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL6/Output/2.png)
+
+![Screenshot Output Unguided 3_3](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL6/Output/3.png)
 
 penjelasan unguided 3
 Code ini merupakan program utama untuk mengelola data kendaraan menggunakan Doubly Linked List. Program meminta pengguna memasukkan empat data kendaraan, mengecek nomor polisi agar tidak duplikat, menampilkan data, mencari kendaraan berdasarkan nomor polisi, dan menghapus data kendaraan yang dipilih. Setelah data dihapus, program menampilkan kembali isi list untuk melihat hasilnya.
