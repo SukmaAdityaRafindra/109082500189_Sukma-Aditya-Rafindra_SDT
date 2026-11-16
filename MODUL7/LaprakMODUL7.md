@@ -668,6 +668,9 @@ int main() {
 
 ![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL7/Output/Output1.png)
 
+
+##### Output 2
+
 ![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL7/Output/Output2.png)
 
 
