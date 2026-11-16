@@ -666,11 +666,10 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL6/Output/1.png)
+![Screenshot Output Unguided 3_1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL7/Output/Output1.png)
 
-![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL6/Output/2.png)
+![Screenshot Output Unguided 3_2](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL7/Output/Output2.png)
 
-![Screenshot Output Unguided 3_3](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL6/Output/3.png)
 
 penjelasan unguided 3
 Program ini menguji tiga skenario tumpukan berbasis array secara berurutan. Pertama, program mendemonstrasikan cara menambah dan mengambil data paling atas, lalu membalik urutannya memakai tumpukan sementara. Kedua, data disisipkan agar otomatis tersusun urut, dan terakhir program membaca deretan angka ketikan pengguna hingga tombol enter ditekan untuk disimpan ke dalam tumpukan lalu dibalik kembali
