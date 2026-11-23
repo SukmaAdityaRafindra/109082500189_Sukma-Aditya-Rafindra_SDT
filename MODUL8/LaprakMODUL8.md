@@ -638,12 +638,12 @@ int main() {
 
 ##### Output 1
 
-![Screenshot Output Unguided 3_1]()
+![Screenshot Output Unguided 1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL8/Output/image.png)
 
 
 ##### Output 2
 
-![Screenshot Output Unguided 3_2]()
+![Screenshot Output Unguided 1](https://github.com/SukmaAdityaRafindra/109082500189_Sukma-Aditya-Rafindra_SDT/blob/main/MODUL8/Output/image%20copy.png)
 
 
 penjelasan unguided 
